@@ -66,10 +66,25 @@ console.log(teachersString);
 // 10. Verifica se l'array teachers è vuoto
 // e salva il risultato nella variabile isTeachersEmpty
 if (teachers.length === 0 ) {
-  const isTeachersEmpty = "Teachers is Empty";
-  console.log(isTeachersEmpty);
-} else {
-  const isTeachersEmpty = "Teachers is not Empty";
-  console.log(isTeachersEmpty);
-}
+   const isTeachersEmpty = "Teachers is Empty";
+   console.log(isTeachersEmpty);
+ } else {
+   const isTeachersEmpty = "Teachers is not Empty";
+   console.log(isTeachersEmpty);
+ }
 
+ /**************BONUS***************/
+
+// 1. Inverti l'ordine degli insegnanti nell'array teachers
+// e salva il risultato nella variabile reversedTeachers 
+const reversedTeachers = teachers.reverse();
+console.log(reversedTeachers);
+
+// 2. Crea un nuovo array chiamato 'longNames' che contenga solo gli insegnanti
+// con un nome di lunghezza maggiore o uguale a 5 caratteri
+const longNames = teachers.filter((teachers) => teachers.length > 4);
+console.log(longNames);
+
+// 3. Rimuovi 'Ed' dall'array teachers
+teachers.splice(1, 1);
+console.log(teachers);
